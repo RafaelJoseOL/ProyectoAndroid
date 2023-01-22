@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ProyectoAndroid</string>
+    <string name="Escritores">Escritores</string>
+    <string name="Sagas">Sagas</string>
+    <string name="Libros">Libros</string>
+    <string name="Tiendas">Tiendas</string>
+</resources>
