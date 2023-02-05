@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "596521445657",
+    "project_id": "proyectoandroidstudiorjol",
+    "storage_bucket": "proyectoandroidstudiorjol.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:596521445657:android:4b9551277c11517bcd3d88",
+        "android_client_info": {
+          "package_name": "com.rjol.proyectoandroid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "596521445657-bl5ta9spov2ku09abgul95mfr4cl2igu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDE3kBa_R4IcLl2m5MXDzEim8Tprx9iBFM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "596521445657-bl5ta9spov2ku09abgul95mfr4cl2igu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

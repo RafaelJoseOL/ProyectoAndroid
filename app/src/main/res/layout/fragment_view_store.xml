@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="150dp"
     android:background="@color/background">
 
     <LinearLayout
@@ -14,16 +14,18 @@
 
         <ImageView
             android:id="@+id/store_photo"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="104dp"
+            android:layout_height="107dp"
             android:scaleType="centerCrop"
             android:src="@drawable/default_store_photo" />
 
         <TextView
-            android:id="@+id/writer_name"
+            android:id="@+id/store_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
             android:text="Nombre de la tienda"
             android:textSize="22sp" />
 

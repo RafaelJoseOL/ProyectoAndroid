@@ -12,6 +12,10 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
         <EditText
             android:id="@+id/search_bar"
             android:layout_width="match_parent"
@@ -23,6 +27,7 @@
             android:layout_width="match_parent"
             android:layout_height="632dp"
             android:orientation="vertical"
+            tools:listitem="@layout/fragment_view_store"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
 
 
