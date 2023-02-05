@@ -12,15 +12,16 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="30dp" />
-
         <EditText
             android:id="@+id/search_bar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColorHint="@color/white"
             android:hint="Buscar tienda..." />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/store_recycler_view"

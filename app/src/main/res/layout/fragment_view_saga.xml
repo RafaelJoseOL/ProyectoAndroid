@@ -20,6 +20,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="10dp"
             android:text="Nombre de la saga"
+            android:textColor="@color/white"
             android:textSize="22sp" />
 
     </LinearLayout>
