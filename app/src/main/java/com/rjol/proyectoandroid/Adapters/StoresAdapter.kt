@@ -7,12 +7,14 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.rjol.proyectoandroid.Model.Saga
 import com.rjol.proyectoandroid.Model.Store
 import com.rjol.proyectoandroid.R
 
 class StoresAdapter : RecyclerView.Adapter<StoresAdapter.StoresHolder>() {
 
     private val storesList = ArrayList<Store>()
+    private var listener: OnItemClickListener? = null
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): StoresHolder {
 
@@ -27,6 +29,9 @@ class StoresAdapter : RecyclerView.Adapter<StoresAdapter.StoresHolder>() {
         Glide.with(holder.itemView.context)
             .load(currItem.imagen)
             .into(holder.image)
+        holder.itemView.setOnClickListener {
+            listener?.onItemClick(currItem)
+        }
     }
 
     override fun getItemCount(): Int {
@@ -44,5 +49,13 @@ class StoresAdapter : RecyclerView.Adapter<StoresAdapter.StoresHolder>() {
 
         val name : TextView = itemView.findViewById(R.id.store_name)
         val image : ImageView = itemView.findViewById(R.id.store_photo)
+    }
+
+    interface OnItemClickListener {
+        fun onItemClick(store: Store)
+    }
+
+    fun setOnItemClickListener(listener: OnItemClickListener) {
+        this.listener = listener
     }
 }

@@ -33,6 +33,7 @@ class WriterRepo {
                 .addOnSuccessListener { result ->
                     for (document in result) {
                         val writer = document.toObject(Writer::class.java)
+                        writer.idEscritor = document.id
                         _writersList.add(writer)
                     }
                     writersList.postValue(_writersList)

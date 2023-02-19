@@ -33,6 +33,7 @@ class BookRepo {
                 .addOnSuccessListener { result ->
                     for (document in result) {
                         val book = document.toObject(Book::class.java)
+                        book.idBook = document.id
                         _booksList.add(book)
                     }
                     booksList.postValue(_booksList)

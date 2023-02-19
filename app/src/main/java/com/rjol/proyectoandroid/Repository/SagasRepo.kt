@@ -33,6 +33,7 @@ class SagasRepo {
                 .addOnSuccessListener { result ->
                     for (document in result) {
                         val saga = document.toObject(Saga::class.java)
+                        saga.idSaga = document.id
                         _sagasList.add(saga)
                     }
                     sagasList.postValue(_sagasList)

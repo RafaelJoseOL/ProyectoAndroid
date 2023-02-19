@@ -17,7 +17,7 @@ class MainFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_main, container, false)
-        (activity as AppCompatActivity).supportActionBar?.title = "Tablas"
+        (activity as AppCompatActivity).supportActionBar?.title = "Principal"
 
         val writersListButton = view.findViewById<ImageButton>(R.id.button_writers)
         writersListButton.setOnClickListener {
@@ -49,15 +49,15 @@ class MainFragment : Fragment() {
             fragmentTransaction.commit()
         }
 
-        val storesListButton = view.findViewById<ImageButton>(R.id.button_stores)
-        storesListButton.setOnClickListener {
-            val fragmentTransaction = parentFragmentManager.beginTransaction()
-            val fragment = StoresListFragment()
-            fragmentTransaction.replace(R.id.fragment_main, fragment)
-            fragmentTransaction.addToBackStack(null)
-            (activity as AppCompatActivity).supportActionBar?.title = "Tiendas"
-            fragmentTransaction.commit()
-        }
+//        val storesListButton = view.findViewById<ImageButton>(R.id.button_stores)
+//        storesListButton.setOnClickListener {
+//            val fragmentTransaction = parentFragmentManager.beginTransaction()
+//            val fragment = StoresListFragment()
+//            fragmentTransaction.replace(R.id.fragment_main, fragment)
+//            fragmentTransaction.addToBackStack(null)
+//            (activity as AppCompatActivity).supportActionBar?.title = "Tiendas"
+//            fragmentTransaction.commit()
+//        }
 
         val logOutButton = view.findViewById<Button>(R.id.logOutButton)
         logOutButton.setOnClickListener(){
