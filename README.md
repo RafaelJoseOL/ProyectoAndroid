@@ -1,4 +1,4 @@
-ENTREGA INICIAL DE XML
+                   ENTREGA INICIAL DE XML
 
 He subido unos diseños iniciales de XML, estos obviamente no serán finales hasta que no tenga la BBDD configurada con sus imágenes, texto y demás, para poder ver como encaja todo, que colores usar, etc.
 
@@ -10,7 +10,7 @@ Por último, se podrán borrar entradas desde cada details, o añadir desde las 
 
 
 
-PRIMERA ENTREGA FUNCIONAL
+                  PRIMERA ENTREGA FUNCIONAL
 
 He hecho la pantalla de login mediante usuario y contraseña y hecho funcionales los botones del principal fragment para que lleven a los de las diferentes tablas de la BBDD, cogiendo la información relevante de la misma y mostrandola en un recyclerview. Lista de TODO para la siguiente entrega:
 
@@ -27,3 +27,9 @@ Indicar el correo al que se está conectado junto al botón de desconexión
 Modificar estilo de los activity y fragment
 
 Conexión mediante google
+
+
+
+                SEGUNDA ENTREGA FUNCIONAL
+
+De la anterior lista, he añadido las relaciones entre tablas, añadir y borrar entradas, navegacion completa y alguna modificación del estilo. La aplicación ya está completamente funcional.
